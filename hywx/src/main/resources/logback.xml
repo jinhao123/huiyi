@@ -19,7 +19,7 @@
         	<level>INFO</level>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>${catalina.base}/logs/ci-info-%d{yyyy-MM-dd}.log</FileNamePattern>  
+            <FileNamePattern>${catalina.base}/logs/ss-info-%d{yyyy-MM-dd}.log</FileNamePattern>  
             <MaxHistory>10</MaxHistory>
         </rollingPolicy>  
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -34,7 +34,7 @@
 			<onMismatch>DENY</onMismatch>        				
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>${catalina.base}/logs/ci-debug-%d{yyyy-MM-dd}.%i.log</FileNamePattern>  
+            <FileNamePattern>${catalina.base}/logs/ss-debug-%d{yyyy-MM-dd}.%i.log</FileNamePattern>  
             <MaxHistory>10</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
 	           <maxFileSize>100MB</maxFileSize>  
@@ -50,7 +50,7 @@
 	<logger name="org.apache.ibatis" level="DEBUG"/>
 	<logger name="org.mybatis.spring" level="DEBUG"/>
 
-	<logger name="com.zk" level="DEBUG" >
+	<logger name="com.ss" level="DEBUG" >
 	    <appender-ref ref="DEBUG"/>
 	</logger>	
 		

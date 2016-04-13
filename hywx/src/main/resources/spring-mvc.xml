@@ -18,7 +18,7 @@
 	</bean>
 	
 	<!-- 扫描控制器类-->
-	<context:component-scan base-package="com.zk/**/controller/**" />
+	<context:component-scan base-package="com.ss/**/controller/**" />
 	 
 	<!-- 配置静态资源-->
 	<mvc:resources location="/res/" mapping="/res/**" />

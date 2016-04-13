@@ -24,7 +24,7 @@
 	<context:annotation-config />
 
 	<!-- Scans for application @Components to deploy -->
-	<context:component-scan base-package="com.zk" />
+	<context:component-scan base-package="com.ss" />
 
 	<!-- 数据库配置文件位置 -->
 	<context:property-placeholder location="classpath:/jdbc.properties" />
@@ -41,23 +41,23 @@
 		<property name="initialSize" value="${jdbc.initialSize}" />
 	</bean>
 	-->
-	<bean id="dataSource" class="com.zk.platform.base.db.DynamicDataSource">
+	<bean id="dataSource" class="com.ss.platform.base.db.DynamicDataSource">
 	</bean>
 	
 
 	<!--事务 -->
-	<bean id="zkTransactionManager"
+	<bean id="ssTransactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
 	<!-- 使用annotation注解方式配置事务 -->
-	<tx:annotation-driven transaction-manager="zkTransactionManager" />
+	<tx:annotation-driven transaction-manager="ssTransactionManager" />
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:sqlMapConfig.xml"></property>
-		<property name="mapperLocations" value="classpath:com/zk/**/sqlmap/*Mapper.xml"></property>
+		<property name="mapperLocations" value="classpath:com/ss/**/sqlmap/*Mapper.xml"></property>
 	</bean>
 
 	<!-- 配置SQLSession模板 -->
