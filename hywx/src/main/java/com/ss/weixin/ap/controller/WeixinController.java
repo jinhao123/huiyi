@@ -112,7 +112,8 @@ public class WeixinController
 				// 其他入口来的，如初始短信的连接
 			}
 			// 根据gzhId获取appid和appSecret
-			WeixinGzh gzh = weixinGzhService.getGzhByOpenId(gzhId);
+			// WeixinGzh gzh = weixinGzhService.getGzhByOpenId(gzhId);
+			WeixinGzh gzh = weixinGzhService.defaultGzh;
 			return weixinService.getProcessMv(gzh, code, state, req);
 			// 根据state跳转到业务菜单
 			/*

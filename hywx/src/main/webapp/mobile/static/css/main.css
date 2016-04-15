@@ -1,0 +1,108 @@
+html{font-family: sans-serif;}
+html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,strong,var,fieldset,form,label,dl,dt,dd,cite,input,hr,time,mark,code,figcaption,figure,textarea,h1,h2,h3,h4,h5,h6,p{margin:0;border:0;padding:0;font-style:normal;}
+html,body {-webkit-touch-callout:none;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-user-select:none;background-color: #ebebeb;font-family:"微软雅黑",tahoma,arial,'Hiragino Sans GB',sans-serif;font-size: 14px;line-height: 1.5;height:100%;}
+nav,article,aside,details,main,header,footer,section,fieldset,figcaption,figure{display: block;}
+img,a,button,em,del,strong,var,label,cite,small,time,mark,code,textarea{display:inline-block;}
+header,section,footer {position:relative;}
+ol,ul{list-style:none;}
+input,button,textarea {border:0;margin:0;padding:0;font-size:1em;-webkit-appearance:none;line-height:1em;background-color:rgba(0, 0, 0, 0);outline:none;font-family:"微软雅黑",tahoma,arial,'Hiragino Sans GB',sans-serif;border-radius: 0;}
+a:active, a:hover {outline: 0;}
+a, a:visited{text-decoration:none;}
+*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+#layout-wrap{padding:0px 12px 0px 12px;}
+.validation-describe{color:#808080;padding:11px 0px 7px 0px;}
+.nosupply-describe{color:#808080;padding:11px 0px 7px 12px;text-align:center;}
+.input-text{height:35px;color:#808080;border-radius:4px;border:1px solid #d6d6d6;background:#fff;width:100%;padding-left:12px;}
+.validation-row{margin-bottom:12px;height:35px;}
+.identifying-code{width:60%;float:left;}
+.send-code{float:left;width:37%;margin-left:3%;height:35px;line-height:35px;color:rgba(128,128,128,0.5);border-radius:4px;border:1px solid #d6d6d6;background: -webkit-linear-gradient(top,  #ffffff 0%, #f0f0f0 100%);}
+.send-code-normal{color:#808080;}
+.ok-area{width:100%;height:36px;line-height:36px;background:#ff9008;color:rgba(255,255,255,0.5);text-align:center;border-radius:4px;font-size:15px;}
+.ok-area-normal{color:#fff;}
+.mobilearea img{width:99px;height:99px;}
+.mobilearea{text-align:center;padding-top:40px;padding-bottom:25px;}
+.mobile-text{width:100%;text-align:center;color:#333;}
+.mobile-num{font-size:35px;color:#1a1a1a;text-align:center;width:100%;padding-top:18px;}
+.change-mobile{font-size:16px;color:#ff9008;width:90%;height:39px;line-height:39px;text-align:center;background:#ffffff;border:1px solid #d6d6d6;border-radius:4px;margin:12px 5% 0px 5%;}
+::-webkit-input-placeholder {padding:3px 0px 3px 0px;}
+.f01{background:#f0f1f2;}
+.f01 #layout-wrap{padding:0;}
+.f02{background:#fff;}
+.saccout-row,.rdpsortarea,.rdpsortarea-other{background:#fff;border:1px solid #e0e0e0;padding:0px 12px 12px 12px;margin-top:6px;}
+.row-title-area{line-height:45px;height:45px;border-bottom:1px solid #e0e0e0;display:-webkit-box;display:box;}
+.row-title{font-size:16px;color:#1a1a1a;font-weight:bold;-webkit-box-flex:1;height:45px;overflow:hidden;}
+.right-arrow{background: url("../images/right-arrow.png") no-repeat;background-size:7px 14px;width:12px;height:26px;margin-top:16px;}
+.row-area-content{padding-top:13px;}
+.row-area-content .rac-row{color:#8a8a8a;padding-bottom:7px;}
+.accounttop-area{background:#028ae6;color:#fff;width: 100%;display: table;}
+.accounttop-area-title{font-size:20px;width:100%;text-align:center;font-weight:bold;padding-top:23px;}
+.accounttop-area-content{width:100%;text-align:center;padding-top:15px;padding-bottom:25px;}
+.qsupply{font-size:17px;}
+.qmoney{font-size:30px;font-weight:bold;padding-left:8px;}
+.account-money-area{background:#fff;box-shadow:0px 1px 0px 0px #e0e0e0, inset 0px 1px 0px 0px #e0e0e0;display:-webkit-box;padding:16px 0px 16px 0px;}
+.search-date{height:34.5px;padding-left:12px;}
+.search-date .month{height:34px;}
+.ama-cell{-webkit-box-flex:1;display:-webkit-box;}
+.right-dis{background:#ccc;width:1px;height:18px;margin-top:10px;}
+.amec-content{-webkit-box-flex:1;text-align:center;}
+.amec-content-money{color:#1a1a1a;font-size:14px;font-weight:bold;}
+.amec-content-der{font-size:13px;color:#666;}
+.account-sort-area,.rp-sort-area{border:1px solid #e0e0e0;margin:5px 0px 5px 0px;padding-left:12px;background:#fff;}
+.account-sort-row{border-bottom:1px solid #e0e0e0;display:-webkit-box;display:box;height:66px;padding-right:12px;}
+.ascell-name{-webkit-box-flex:1;padding-top:15px;}
+.ascell-name-dercript{font-size:16px;font-weight:bold;color:#1a1a1a;}
+.ascell-name-date{font-size:12px;color:#8a8a8a;}
+.ascell-money{font-size:18px;color:#1a1a1a;width:93px;margin:21px 15px 0px 0px;}
+.account-sort-row .right-arrow{margin-top:28px;}
+.account-sort-row:last-child,.rp-sort-row:last-child{border:0;}
+.month{background: url("../images/down-arrow.png") no-repeat;background-size:7px 4px;width:100%;background-position: 100px 15px;}
+.rparea-title,.rdparea-title{float:left;font-size: 20px;font-weight: bold;padding:21px 0px 16px 0px;}
+.company-icon{background: url("../images/company-icon.png") no-repeat;background-size:25px 23px;width:25px;height:23px;float:left;margin:25px 7px 0px 12px}
+.rp-sort-area{margin:0px 0px 5px 0px;border-top:0px;}
+.rp-sort-row{height: 66px;padding-top: 10px;border-bottom: 1px solid #e0e0e0;}
+.rp-row-name{color:#8a8a8a}
+.rp-row-money{font-size:15px;font-weight:bold;color:#1a1a1a;margin-top:2px;}
+.rdpsortarea{margin:0 0px 6px 0px;padding:12px 0px 0px 0px;}
+.rdparea-title{padding-bottom:0;}
+.rdparea-date,.rdparea-code{clear:both;padding-left:12px;}
+.rdparea-date{padding-top:5px;}
+.rdparea-code{padding:5px 0px 20px 12px;}
+.rdptitle-area{display:-webkit-box;padding:15px 12px 7px 12px;color:#666;}
+.rdptitlel{-webkit-box-flex:1;}
+.rdptitler{font-size:13px;}
+.mysupply-dis{padding-top:13px;}
+.rdpr-title-row,.rdpr-content-row,.rdp-other-row{display:-webkit-box;}
+.rdpr-title-sign{background:#65b6f7;width:3px;height:13px;margin:5px 9px 0px 0px;}
+.rdpr-title-content{font-size:15px;font-weight:bold;color:#1a1a1a;}
+.rdpc-dis{padding-left:12px;}
+.rdpr-content-row{color:#8a8a8a;}
+.rdpr-content-row{padding-left:12px;padding-top:5px;}
+.rdprc-cell-1,.rdprc-cell-2,.rdprc-cell-3{-webkit-box-flex:1;}
+.rdpsortarea-row{margin-bottom:15px;}
+.rdpsortarea-other{margin-top:0px;padding-top:12px;}
+.rdp-other-cell{-webkit-box-flex:1;color:#8a8a8a;}
+.rdp-other-money{font-weight:bold;color:#1a1a1a;text-align:right;}
+.rdp-other-row{padding-bottom:5px;}
+.orange{color:#ff9008;}
+.green{color:#34b87e;}
+.rdp-moeny-der{position:relative;height:34px;border-radius:3px;width:80%;border:1px solid #ccc;color:#8a8a8a;font-size:12px;margin-bottom:12px;line-height:34px;}
+.moneyder-dis{padding-left:26px;}
+.rdpder-date{padding-left:11px;}
+.toparrow{ height:0; width:0; overflow: hidden; font-size: 0; line-height: 0; border-color:transparent transparent #ccc transparent; border-style:dashed dashed solid dashed; border-width:5px;position:absolute;left:11px;top:-11px;}
+.toparrowr{height:0; width:0; overflow: hidden; font-size: 0; line-height: 0; border-color:transparent transparent #fff transparent; border-style:dashed dashed solid dashed; border-width:5px;position:absolute;left:11px;top:-10px;}
+.mysupply-title{height:45px;line-height:45px;font-size:16px;color:#028ae6;font-weight:bold;border-bottom:1px solid #e0e0e0;}
+.mysupply-area{border:1px solid #e0e0e0;background:#fff;margin-bottom:12px;}
+.mysupply .layout-content{padding:6px 0px 25px 0px;}
+.mysupply-title{padding:0px 12px 0px 12px;}
+.mysupply-content-row{padding:12px 0px 12px 0px;border-bottom:1px solid #e0e0e0;margin-left:12px;}
+.mysupply-content{font-size:14px;height:20px;line-height:20px;margin-bottom:7px;}
+.mysupply-content:last-child{margin-bottom:0px;}
+.mysupply-content-row:last-child{border-bottom:0;}
+.mysupply-content label{color:#8a8a8a;}
+.mysupply-content span{color:#000!important;}
+.helparea-row{border-bottom:1px solid #e0e0e0;padding:15px 0px 15px 0px;}
+.help-title{font-size:15px;color:#1a1a1a;font-weight:bold;padding-bottom:11px;}
+.help-content{color:#8a8a8a;line-height:25px;}
+.building-describe{color:#808080;text-align:center;}
+.onbuilding{text-align:center;}
+.onbuilding img{width:300px;height:260px;margin:50px 0px 40px 0px;}

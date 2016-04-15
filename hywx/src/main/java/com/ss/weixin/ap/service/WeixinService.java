@@ -125,8 +125,7 @@ public class WeixinService
 		String url = String.format("http://%s/ci/weixin/reg/beginValidateMobile.action?gzhOpenId=%s&userOpenId=%s",
 				cishost, gzhOpenId, userOpenId);
 		sb.append("尊敬的用户您好，");
-		sb.append("\n您可通过该平台了解供货商发布的促销信息，向供货商订货，获取供货商的促销返利等。");
-		sb.append("\n首次使用需先验证您的手机号。");
+		sb.append("\n为了账户安全，建议验证您的手机号。");
 		sb.append(String.format("\n<a href='%s'>验证手机号</a>", url));
 		return sb.toString();
 	}
@@ -150,7 +149,7 @@ public class WeixinService
 		else
 		{
 			Map<String, Object> model = new HashMap<String, Object>();
-			mv = new ModelAndView("ci/weixin/common/onbuilding", model);
+			mv = new ModelAndView("ss/weixin/common/onbuilding", model);
 		}
 		return mv;
 
