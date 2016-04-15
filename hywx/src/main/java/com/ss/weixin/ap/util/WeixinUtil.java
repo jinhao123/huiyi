@@ -1,26 +1,33 @@
 package com.ss.weixin.ap.util;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.ConnectException;
 import java.net.URL;
 import java.util.Date;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 
+import org.apache.http.HttpEntity;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
-import com.ss.weixin.ap.intf.IMenuProcess;
 import com.ss.weixin.ap.pojo.WeixinGzh;
 import com.ss.weixin.ap.vo.AccessToken;
 import com.ss.weixin.ap.vo.UserAccessToken;
@@ -33,15 +40,6 @@ public class WeixinUtil
 {
 	// 推送客户消息地址
 	public final static String send_customer_message = "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=%s";
-	// 菜单ModelView Map
-	public static Map<String, IMenuProcess> menuConfig = new ConcurrentHashMap<String, IMenuProcess>();
-	public static Map<String, String> menuBeanConfig = new ConcurrentHashMap<String, String>();
-	static
-	{
-		menuBeanConfig.put(MenuUtil.MENU_GONG_HUO_SHANG, "menuGongHuoShang");
-		menuBeanConfig.put(MenuUtil.MENU_HELP, "menuHelp");
-		menuBeanConfig.put(MenuUtil.MENU_YI_JIAN_DING_HUO, "menuYiJianDingHuo");
-	}
 
 	private static final Logger logger = LoggerFactory.getLogger(WeixinUtil.class);
 
@@ -276,4 +274,57 @@ public class WeixinUtil
 		return result;
 	}
 
+	static final String HTTP_POST = "POST";
+	static final String HTTP_GET = "GET";
+
+	private static String doHttpRequest(String url, String method, String postData)
+	{
+		String result = "";
+		//
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+		try
+		{
+			HttpUriRequest request = null;
+			CloseableHttpResponse response = null;
+			if (HTTP_GET.equals(method))
+			{
+				request = new HttpGet(url);
+			}
+			else
+			{
+				HttpPost httpPost = new HttpPost(url);
+				httpPost.setEntity(new StringEntity(postData, "utf-8"));
+				request = httpPost;
+			}
+			try
+			{
+				response = httpclient.execute(request);
+				HttpEntity resEntity = response.getEntity();
+				if (resEntity != null)
+				{
+					result = EntityUtils.toString(resEntity, "utf-8");
+				}
+			}
+			finally
+			{
+				response.close();
+			}
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+			try
+			{
+				httpclient.close();
+			}
+			catch (IOException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		return result;
+	}
 }

@@ -24,7 +24,7 @@ import com.ss.weixin.ap.util.MenuUtil;
 import com.ss.weixin.ap.util.SignUtil;
 
 @Controller
-@RequestMapping("/ci/weixin")
+@RequestMapping("/weixin")
 public class WeixinController
 {
 	private static final Logger logger = LoggerFactory.getLogger(WeixinController.class);

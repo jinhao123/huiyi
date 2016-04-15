@@ -7,7 +7,7 @@
 	    	<!-- <level>DEBUG</level> -->
 	    	<!-- <level>WARN</level> -->  
 	    	<!--  -->    
-        	<level>DEBUG</level>
+        	<level>WARN</level>
         </filter>
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>%date{MM-dd HH:mm:ss} [%.30thread] [%-5level] %logger{50} - %msg %n</pattern>
@@ -19,7 +19,7 @@
         	<level>INFO</level>
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>${catalina.base}/logs/ss-info-%d{yyyy-MM-dd}.log</FileNamePattern>  
+            <FileNamePattern>${catalina.base}/logs/info-%d{yyyy-MM-dd}.log</FileNamePattern>  
             <MaxHistory>10</MaxHistory>
         </rollingPolicy>  
         <layout class="ch.qos.logback.classic.PatternLayout">
@@ -34,7 +34,7 @@
 			<onMismatch>DENY</onMismatch>        				
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
-            <FileNamePattern>${catalina.base}/logs/ss-debug-%d{yyyy-MM-dd}.%i.log</FileNamePattern>  
+            <FileNamePattern>${catalina.base}/logs/debug-%d{yyyy-MM-dd}.%i.log</FileNamePattern>  
             <MaxHistory>10</MaxHistory>
             <timeBasedFileNamingAndTriggeringPolicy  class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">  
 	           <maxFileSize>100MB</maxFileSize>  

@@ -15,15 +15,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.ss.platform.util.PropertiesUtil;
-import com.ss.platform.util.SpringUtil;
 import com.ss.weixin.ap.intf.IMenuProcess;
 import com.ss.weixin.ap.msg.rsp.Article;
 import com.ss.weixin.ap.msg.rsp.NewsMessage;
 import com.ss.weixin.ap.msg.rsp.TextMessage;
 import com.ss.weixin.ap.pojo.WeixinGzh;
 import com.ss.weixin.ap.util.EmojiUtils;
+import com.ss.weixin.ap.util.MenuUtil;
 import com.ss.weixin.ap.util.MessageUtil;
-import com.ss.weixin.ap.util.WeixinUtil;
 
 /**
  * 核心服务类
@@ -122,11 +121,11 @@ public class WeixinService
 	private String createWelcomeMsg(String gzhOpenId, String userOpenId)
 	{
 		StringBuilder sb = new StringBuilder();
-		String cishost = PropertiesUtil.getSysProp("cisvr.host", "wx.waiqin365.com");
+		String cishost = PropertiesUtil.getSysProp("gzh.host");
 		String url = String.format("http://%s/ci/weixin/reg/beginValidateMobile.action?gzhOpenId=%s&userOpenId=%s",
 				cishost, gzhOpenId, userOpenId);
 		sb.append("尊敬的用户您好，");
-		sb.append("\n旺店365是一个连接门店与供货商的信息平台。您可通过该平台了解供货商发布的促销信息，向供货商订货，获取供货商的促销返利等。");
+		sb.append("\n您可通过该平台了解供货商发布的促销信息，向供货商订货，获取供货商的促销返利等。");
 		sb.append("\n首次使用需先验证您的手机号。");
 		sb.append(String.format("\n<a href='%s'>验证手机号</a>", url));
 		return sb.toString();
@@ -142,25 +141,17 @@ public class WeixinService
 	 */
 	public ModelAndView getProcessMv(WeixinGzh gzh, String code, String state, HttpServletRequest req)
 	{
-		IMenuProcess mp = WeixinUtil.menuConfig.get(state);
+		ModelAndView mv = null;
+		IMenuProcess mp = MenuUtil.getMenuProcesser(state);
 		if (mp != null)
 		{
-			return mp.getProcessMv(gzh, code, req);
+			mv = mp.getProcessMv(gzh, code, req);
 		}
-		// 获取bean
-		String menuBeanName = WeixinUtil.menuBeanConfig.get(state);
-		if (menuBeanName != null)
+		else
 		{
-			mp = (IMenuProcess) SpringUtil.getBean(menuBeanName);
-			if (mp != null)
-			{
-				WeixinUtil.menuConfig.put(state, mp);
-				return mp.getProcessMv(gzh, code, req);
-			}
+			Map<String, Object> model = new HashMap<String, Object>();
+			mv = new ModelAndView("ci/weixin/common/onbuilding", model);
 		}
-		// 返回建设中
-		Map<String, Object> model = new HashMap<String, Object>();
-		ModelAndView mv = new ModelAndView("ci/weixin/common/onbuilding", model);
 		return mv;
 
 	}

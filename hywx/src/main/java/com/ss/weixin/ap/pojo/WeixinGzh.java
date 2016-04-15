@@ -12,6 +12,9 @@ public class WeixinGzh extends BasePojo
 	private String appSecret;
 	private String shMchId;
 	private String shApiKey;
+	private String host;
+	private String url;
+	private String token;
 
 	public Long getTenantId()
 	{
@@ -91,5 +94,35 @@ public class WeixinGzh extends BasePojo
 	public void setShApiKey(String shApiKey)
 	{
 		this.shApiKey = shApiKey;
+	}
+
+	public String getUrl()
+	{
+		return url;
+	}
+
+	public void setUrl(String url)
+	{
+		this.url = url;
+	}
+
+	public String getToken()
+	{
+		return token;
+	}
+
+	public void setToken(String token)
+	{
+		this.token = token;
+	}
+
+	public String getHost()
+	{
+		return host;
+	}
+
+	public void setHost(String host)
+	{
+		this.host = host;
 	}
 }
