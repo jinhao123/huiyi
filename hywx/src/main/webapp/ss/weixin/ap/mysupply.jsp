@@ -46,7 +46,7 @@
 		</c:if>	
 		
 		<div class="mobile-num">${user.mobile }</div>
-		<div class="change-mobile" onclick="window.location.href='/ci/weixin/reg/beginChangeMobile.action?gzhOpenId=${user.gzhOpenid }&userOpenId=${user.openid }'">更换手机号</div>
+		<div class="change-mobile" onclick="window.location.href='/weixin/reg/beginChangeMobile.action?gzhOpenId=${user.gzhOpenid }&userOpenId=${user.openid }'">更换手机号</div>
 	</div>
 	
 	

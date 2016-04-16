@@ -21,7 +21,7 @@ public class MenuUtil
 	private static final Logger logger = LoggerFactory.getLogger(MenuUtil.class);
 	//
 	public static final String MENU_HELP = "sys_help";
-	public static final String MENU_SETTING = "sys_setting";
+	public static final String MENU_USER_INFO = "sys_user_info";
 	public static final String MENU_NOTICE = "sys_notice";
 	public static final String MENU_YUYUE = "sys_yuyue";
 	public static final String menu_url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_userinfo&state=%s";
@@ -30,9 +30,9 @@ public class MenuUtil
 	public static Map<String, String> menuBeanConfig = new ConcurrentHashMap<String, String>();
 	static
 	{
-		menuBeanConfig.put(MenuUtil.MENU_SETTING, "menuGongHuoShang");
+		menuBeanConfig.put(MenuUtil.MENU_USER_INFO, "userInfoController");
 		menuBeanConfig.put(MenuUtil.MENU_HELP, "menuHelp");
-		menuBeanConfig.put(MenuUtil.MENU_YUYUE, "menuYiJianDingHuo");
+		menuBeanConfig.put(MenuUtil.MENU_YUYUE, "yuyueController");
 	}
 
 	public static IMenuProcess getMenuProcesser(String menuTag)
@@ -87,7 +87,7 @@ public class MenuUtil
 		{
 			MenuButton submenu = MenuButton.newSubMenu("我的");
 			menus1.add(submenu);
-			submenu.getSub_button().add(MenuButton.newUrlMenu("个人信息", buildMenuUrl(gzh, MENU_SETTING)));
+			submenu.getSub_button().add(MenuButton.newUrlMenu("个人信息", buildMenuUrl(gzh, MENU_USER_INFO)));
 			submenu.getSub_button().add(MenuButton.newClickMenu("帮助", "give_me_five"));
 		}
 

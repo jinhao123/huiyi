@@ -1,0 +1,267 @@
+body {background-color:#F0F1F2;}
+/*头部带返回按钮*/
+h3.ui-inshop-title {height:44px;line-height:44px;text-align:center;font-size:18px;color:#1A1A1A;background-color:#F7F7F7;width:100%;}
+h3.ui-inshop-title.pfixed {position:fixed}
+i.ui-back-ico {display:inline-block;width:40px;height:44px;position:absolute;left:0;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position:13px -288px;}
+.ui-steptwo-title {font-size:13px;padding:15px 15px 10px 15px;display:-webkit-box;}
+.ui-steptwo-title .ui-steptwo-left {-webkit-box-flex:1;color:#808080;}
+.ui-steptwo-title .ui-steptwo-right .manage{color:#ff9008;}
+.ui-steptwo-title .ui-steptwo-right .finish{color:#1a1a1a;}
+.ui-steptwo-title em {color:#ff9008;margin-left:5px;}
+.ui-list li{margin-left:0px;padding-left:15px;}
+.ui-list2 li{margin-left:15px;padding-left:0;}
+.mt-100 {margin-bottom:100px;}
+.mt-50 {margin-bottom:50px;}
+/*修改数量弹框*/
+.ui-dialog-ft button.ui-cancel-btn {color:#000;}
+.ui-dialog-ft button.ui-confirm-btn {color:#ff790a;}
+.ui-dialog-cnt {background-color:#FFF;}
+.ui-input {margin: 10px 0;}
+/*修改数量*/
+.ui-ecount-input {display:inline-block;height:25px;line-height:25px;padding-left:0px;}
+.ui-ecount-input input {width:35px;}
+/*提示*/
+.ui-loading-block .ui-loading-tip {width: 128px;height: 70px;line-height: 70px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-align: center;text-align: center;background: rgba(0,0,0,.59);border-radius: 10px;color: #fff;font-size: 18px;}
+/*详情页返回按钮*/
+.ui-bgback-ico {opacity:0.59;background:#ffffff;width:40px;height:40px;border-radius:100%;position:absolute;top:10px;left:12px;}
+.ui-bgback-ico i {display:inline-block;width:40px;height:40px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 13px 11px;}
+
+/*数据分页 */
+.pagination {display:none;padding-top: 10px;font-size: 14px;}
+.pagination p,.pagination .ui-loading {display: inline-block;}
+.pagination p {vertical-align: 5px;line-height: 20px;color: #666;}
+.pagination .ui-loading {margin:0;}
+
+/*列表页*/
+.ui-ghList-container {margin-bottom:49px;}
+.ui-shop-content{margin:20px 12px 0 12px;border-radius:8px;background-color:#fff;}
+.ui-shop-title {text-align:left;height:43px;line-height:43px;padding-left:12px;font-size:15px;font-weight:bold;background-color:#FAFAFA;border-radius:8px 8px 0 0;color:#1A1A1A;}
+.ui-list-shop {border-radius:0 0 8px 8px;}
+.ui-shop-name {color:#1A1A1A;font-size:16px;}
+i.shop-ico {display:inline-block;width:17px;height:16px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -2px;margin-right: 10px;background-position: -120px -210px;}
+.ui-shop-list {font-size:13px;color:#808080;}
+a.ui-stock-btn {display:inline-block;width:55px;height:25px;line-height:25px;text-align:center;border-radius:4px;border:1px solid #ff9008;color:#ff9008;}
+.ui-list-btn {display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;margin-right:12px;}
+.ui-footer-index {height:49px;background-color:#f5f5f5;}
+.btn-desc {margin-top:-5px;font-size:12px;}
+li.current .btn-desc {color:#ff9a0d;}
+
+i.home-ico {display:inline-block;width:20px;height:22px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;margin-top:5px;background-position: -60px -30px;}
+li.current i.home-ico {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px -30px;}
+i.car-ico {position:relative;display:inline-block;width:23px;height:20px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;margin-top:5px;background-position: -60px 0;}
+li.current i.car-ico {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px 0px;}
+i.mine-ico {display:inline-block;width:20px;height:20px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;margin-top:5px;background-position: -120px -180px;}
+li.current i.mine-ico {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 0 -60px;}
+
+/*商品列表页*/
+.ui-incomp-detail {padding:20px 15px;background-color:#fff;padding-top:44px;}
+h4.ui-incomp-tit {line-height:36px;font-size:20px;font-weight:bold;}
+h4.ui-incomp-tit i {display:inline-block;width:26px;height:24px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-3px;margin-right:5px;background-position: 0 -210px;}
+.ui-incomp-detail p {line-height:28px;font-size:14px;color:#808080;overflow:hidden;height:28px;text-overflow: ellipsis;white-space:nowrap;}
+a.ui-incomp-tel {margin-left:15px;}
+.ui-incomp-oper {display:-webkit-box;background-color:#FFF;margin-top:12px;}
+ul.ui-tiled-index {margin:10px 0;}
+i.search-ico {display:inline-block;width:23px;height:24px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px -60px;}
+i.abuy-ico {display:inline-block;width:25px;height:24px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px -150px;}
+i.collect-ico {display:inline-block;width:25px;height:25px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 0 -180px;}
+.ui-tiled li.ui-incomp-border {width:1px;height:30px;border-right:1px solid #e0e0e0;margin-top:12px;}
+.btn-desc {font-size:14px;color:#1A1A1A;}
+.ui-incomp-list {margin-top:12px;background-color:#FFF;overflow-y:hidden;position:relative;display:-webkit-box;}
+.ui-type-list {width:80px;display:-webkit-box;overflow-y:auto;overflow-x:hidden;}
+ul.ui-type-listul {width:100%;}
+ul.ui-type-listul li{height:50px;line-height:50px;width:100%;border-bottom:1px solid #e0e0e0;}
+ul.ui-type-listul li.current{border-left:2px solid #ff9008;width:78px;background:#FFF;}
+ul.ui-type-listul li.current span{padding-left:11px;color:#ff9008;}
+ul.ui-type-listul li span{padding-left:13px;}
+.ui-index-car {position:fixed;width:55px;height:55px;border-radius:50%;bottom:10px;left:10px;background:#ff9008 url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-color: #ff9008;background-size:180px 450px;background-position:-46px -285px;}
+.ui-car-count {position:absolute;top:-2px;right:-2px;display:inline-block;width:20px;height:20px;border-radius:10px;background-color:#fb5b04;color:#FFF;text-align:center;font-size:12px;line-height:20px;}
+.ui-inshop-list {-webkit-box-flex: 1;overflow-x:hidden;}
+.ui-list-thumb-shop {margin:12px 12px 12px 0;}
+.ui-list-thumb-shop span{width:85px;height:85px;display:block;z-index:1;background-repeat:no-repeat;-webkit-background-size: cover;}
+.ui-list-info-shop {-webkit-box-flex: 1;padding:12px 15px 12px 0;position:relative;height:85px;}
+.ui-list-info-cpri {display:-webkit-box;position:absolute;bottom: 12px;width:100%;}
+.ui-ico-sub {display:inline-block;width:22px;height:22px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-5px;margin-right:5px;background-position: -60px -90px;}
+.ui-ico-plus {display:inline-block;width:22px;height:22px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-5px;margin-left:5px;background-position: -60px -60px;}
+.ui-shopcount-input {width:35px;height:25px;line-height:25px;border-radius:4px;border:1px solid #CCC;text-align:center;}
+.ui-list-info-c {position:absolute;right:12px;bottom:0;}
+.ui-list-info-pri {font-size:16px;color:#e72c2b;}
+.ui-list-info-pri dfn{font-size:9px;font-style:normal;}
+.ui-list-info-tit {font-size:15px;color:#1A1A1A;}
+
+.ui-business-num {position:relative;}
+.ui-business-num.hide{height:28px;overflow:hidden;}
+.ui-index-unfold {position:absolute;width:30px;height:28px;display:inline-block;right:0px;}
+.ui-index-unfold.down{top:0px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 10px -410px;}
+.ui-index-unfold.up{bottom:0px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -50px -410px;}
+
+/*商品搜索页*/
+.ui-searchbar-wrap {background-color:#e8e9eb;}
+.ui-searchbar-search {font-size:14px;color:#ff9008;}
+.ui-searchbar {margin:0 15px;}
+.ui-icon-search {margin-left:-3px;}
+.ui-searchbar-wrap.focus .ui-icon-close {display:none;}
+.ui-no-goods {text-align:center;font-size:15px;color:#999;margin-top:42px;display:none;}
+.ui-search-car {display:none;}
+
+
+/*收藏商品*/
+.ui-ico-sel {width:19px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;position:absolute;right: 15px;top: 40px;background-position: 0px -90px;}
+.ui-ico-sel.hasSel {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 0px -240px;}
+.ui-footer-col {height:50px;background-color:#f7f7f7;}
+.ui-coll-manage {display:-webkit-box;margin:0 15px;height:50px;line-height:50px;}
+.ui-all-sel {-webkit-box-flex:1;font-size:14px;}
+.ui-coll-btn {-webkit-box-flex:1;text-align:right;}
+.ui-ico-fsel {display:inline-block;width:19px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-4px;margin-right:10px;background-position: 0px -90px;}
+.ui-ico-fsel.hasSel {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 0px -240px;}
+.ui-btn-cancal {display:inline-block;width:68px;height:28px;line-height:28px;text-align:center;border:1px solid #808080;border-radius:4px;margin-right:12px;color:#808080;}
+.ui-btn-del {display:inline-block;width:68px;height:28px;line-height:28px;text-align:center;border:1px solid #ff9008;border-radius:4px;color:#ff9008;}
+.ui-mt50 {margin-bottom:50px;}
+
+/*详情页*/
+.ui-detail {background-color:#FFF;}
+.ui-slider {padding-top:64%;}
+.ui-slider-indicators {right:0px;-webkit-box-pack:center;}
+.ui-name-pri {text-align:center;padding:0 15px;margin-top:25px;}
+.ui-detail-name {font-size:20px;color:#1A1A1A;}
+.ui-detail-pri {font-size:20px;color:#e72c2b;margin-top:5px;}
+.ui-detail-pri dfn{font-size:10px;font-style:normal;}
+.ui-footer-det {height:50px;background-color:#f7f7f7;}
+.ui-det-car {display:-webkit-box;background-color:#f7f7f7;}
+.ui-det-carc {display:-webkit-box;height:50px;line-height:50px;}
+.ui-det-ico {-webkit-box-flex:1;}
+.ui-ico-dcar {position:relative;display:inline-block;width:21px;height:50px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 10px -346px;padding:0 10px 0 10px;margin-left:10px;}
+.ui-ico-dcol {display:inline-block;width:22px;height:50px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -110px -286px;padding:0 10px 0 10px;}
+.ui-dcar-count {display:inline-block;width:20px;height:20px;line-height:20px;border-radius:10px;position:absolute;background-color:#fb5b04;text-align:center;color:#FFF;right:0px;top:5px;}
+.ui-det-addcar {display:inline-block;width:108px;height:50px;line-height:50px;background-color:#ff9008;color:#FFF;font-size:16px;text-align:center;}
+.ui-det-stcount {font-size:13px;color:#808080;margin-right:12px;}
+.ui-det-rlcount {margin-right:12px;}
+
+/*购物车*/
+.ui-tcar-count {position:absolute;display:inline-block;width:20px;height:20px;line-height:20px;border-radius:10px;position:absolute;background-color:#fb5b04;text-align:center;color:#FFF;right:-15px;top:-5px;}
+.ui-footer-car {height:100px;}
+.ui-all-selcar {line-height:50px;padding-left:12px;}
+.ui-det-total {font-size:13px;color:#ff9008;margin-right:20px;}
+.ui-car-title {font-size:15px;color:#666;padding:14px 12px 6px 12px;}
+.ui-carcomp-title {height:56px;line-height:56px;display:-webkit-box;background: #FFF;}
+.ui-carcomp-title i.ui-csel-ico  {display:inline-block;width:19px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-4px;background-position: 0px -90px;}
+.ui-carcomp-title i.ui-csel-ico.hasSel {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: 0 -240px;}
+.ui-carcomp-title i.ui-comp-ico {display:inline-block;width:17px;height:17px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-3px;margin-right:5px;background-position: -60px -210px;}
+.ui-sel-div {width:44px;text-align: center;}
+.ui-name-div {-webkit-box-flex: 1;font-size: 15px;color:#1A1A1A;}
+.ui-edit-div {font-size: 15px;color:#666;margin:0 12px;}
+.ui-ssel-div {width:43px;text-align:center;position:absolute;margin:12px 0;height:85px;line-height:85px;text-align:center;left:-44px;}
+.ui-ssel-div i.ui-cssel-ico  {display:inline-block;width:19px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align:-4px;background-position:0 -90px;}
+.ui-ssel-div i.ui-cssel-ico.hasSel {background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position:0 -240px;}
+.ul-shopcar-list li{margin-left:44px;padding-left:0px;}
+.ui-list-cinfo-pri {font-size:12px;color:#e72c2b;}
+.ui-list-cinfo-pri dfn{font-size:9px;font-style:normal;}
+.ui-list-cinfo-tit {font-size:14px;color:#1A1A1A;}
+.ui-list-cinfo-cpri {display: -webkit-box;position:absolute;bottom:12px;width: 100%;}
+.ui-list-cinfo-cpri span {font-size:12px;color:#808080;}
+.ui-index-footer {background-color:#f5f5f5;}
+.ul-shopcar-edit li .ui-sdel-div {width:50px;background:#FB5B04 url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;margin:12px 0;background-position: -103px -389px;}
+.ul-shopcar-edit li .ui-list-cinfo-cpri span {display:none;}
+.ul-shopcar-edit li .ui-list-cinfo-cpri .ui-list-info-c {left:0px;}
+.ui-cshopcount-input {width:49px;height:22px;line-height:26px;border-radius:2px;border:1px solid #CCC;text-align:center;font-size:13px;}
+.ui-ico-subc {vertical-align:-6px;}
+.ui-ico-plusc {vertical-align:-6px;}
+
+/*下单*/
+.ui-order-footer {height:50px;line-height:50px;}
+.ui-det-order {display:-webkit-box;background-color:#f7f7f7;}
+.ui-det-orderc {display:-webkit-box;height:50px;line-height:50px;width:100%;}
+.ui-det-ototal {font-size:13px;color:#ff9008;margin-right:20px;-webkit-box-flex:1;padding-left:12px;}
+.ui-order-tip {height:35px;line-height:35px;background:#fffae4;text-align:center;padding:0 15px;font-size:13px;color:#333;}
+.ui-order-close {display:inline-block;width:12px;height:12px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;margin-left:9px;vertical-align: -1px;background-position: 0 -30px;}
+.ui-order-date {height:48px;line-height:48px;background:#FFF;padding:0 15px 0 20px;}
+.ui-order-date input {background-image: url(/ss/weixin/yuyue/images/input-sel-ico.png);background-repeat: no-repeat;background-size: 7px 7px;background-position: right bottom;}
+.required:before{position:absolute;content:"*";left:-10px;color:#ff9008;line-height:52px;}
+.ui-sigle-order {margin-top:6px;}
+.ui-order-tit {height:44px;line-height:44px;background-color:#FFF;padding:0 15px;}
+.ui-order-tit em {display:inline-block;height:20px;padding:0 3px;line-height:20px;text-align:center;color:#FFF;border-radius:2px;background-color:#83b7f2;font-size:10px;margin-right:6px;}
+.ui-order-tit span{font-size:15px;color:#1A1A1A;}
+.ui-list-order li{margin-left:15px;padding:0px;}
+.ui-list-info-opri {-webkit-box-flex:1;}
+.ui-list-info-ocount {padding-right:12px;font-size:14px;color:#666;}
+.ui-order-shop {padding-left:95px;text-align:right;font-size:15px;color:#1A1A1A;}
+.ui-order-pri {padding-left:95px;text-align:right;color:#ff9008;font-size:16px;}
+.ui-order-det {background-color:#FFF;}
+.ui-order-det label {font-size:15px;color:#808080;}
+.ui-order-msg {height:30px;line-height:30px;position: relative;padding: 0px 15px 20px 15px;}
+.ui-order-msg input {height:30px;line-height:30px;width:100%;border-radius:4px;border:1px solid #e0e0e0;background-color:#f7f7f7;font-size:13px;color:#999;padding-left:12px;box-sizing: border-box;}
+.ui-form-item-order {height:36px;line-height:36px;}
+
+/*查看订单*/
+.ui-tab-order {height:39px;}
+.ui-tab-order li {height: 39px;line-height: 39px;}
+.ui-tab-order li.current {color:#ff9008;border-bottom: 2px #ff9008 solid;}
+.ui-sigle-order2 {margin-top:12px;}
+.ui-ordervi-tit {display:-webkit-box;}
+.ui-ordervi-tit p {-webkit-box-flex:1;text-align:right;font-size:13px;color:#666;}
+
+/*订单详情*/
+.ui-orderdet-msg {display:-webkit-box;-webkit-box-align: center;padding:10px 15px;background-color:#FFF;}
+.ui-orderdet-txt {-webkit-box-flex:1;}
+.ui-orderdet-txt label {font-size:14px;color:#808080;}
+.ui-orderdet-txt span {font-size:14px;color:#1A1A1A;}
+.ui-orderdet-btn a{display:inline-block;width:79px;height:29px;line-height:30px;text-align:center;border-radius:4px;border:1px solid #ff9008;color:#ff9008;font-size:15px;}
+.ui-orderdt-tit {padding:0 15px;height:44px;line-height:44px;background-color:#FFF;display:-webkit-box;}
+.ui-orderdt-tit p {-webkit-box-flex:1;}
+.ui-dcomp-ico {display: inline-block;width: 17px;height: 17px;background: url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size: 180px 450px;vertical-align: -3px;margin-right: 5px;background-position: -60px -210px;}
+.ui-dcomp-txt {font-size:15px;color:#1a1a1a;}
+.ui-dphone-ico {display: inline-block;background: url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;width: 40px;height: 44px;background-size:180px 450px;background-position: -100px -346px;}
+.ui-order-ddet {background-color:#FFF;margin-top:12px;padding-bottom:10px;}
+.ui-form-item-dorder {padding:10px 15px 0 15px;font-size:14px;}
+.ui-form-item-dorder span {color:#1A1A1A;}
+.ui-form-item-dorder span.ui-dorder-pri {font-size:16px;color:#ff9008;}
+.ui-cancel-forder {width:100%;height:50px;line-height:50px;text-align:center;}
+
+/*订单成功*/
+body.ui-osuccess {background-color:#FFF;}
+.ui-success-order {padding:0 15px;text-align:center;}
+.ui-success-tip {margin-top:16px;}
+a.ui-view-orders {margin:0 13px;display:block;height:40px;line-height:40px;color:#FFF;background-color:#04be02;border-radius:4px;margin-top:35px;}
+a.ui-back-homes {margin:0 13px;display:block;height:38px;line-height:40px;color:#1A1A1A;border:1px solid #e0e0e0;border-radius:4px;margin-top:15px;}
+.ui-succ-ico {width:107px;height:105px;background:url(/ss/weixin/yuyue/images/order-succ-ico.png) no-repeat;background-size:107px 105px;margin:0 auto;margin-top:15%;}
+
+/*我的*/
+.ui-mine-shopname {padding:23px 15px;background-color:#2cb88a;}
+i.ui-shop-ico {display:inline-block;width:26px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -3px;margin-right:8px;background-position: 0 -150px;}
+.ui-mine-shopname span {color:#FFF;}
+.ui-mine-allorder {height:50px;line-height:50px;display:-webkit-box;padding:0 15px;}
+.ui-morder-left {font-size:14px;color:#1A1A1A;display:block;-webkit-box-flex:1;}
+.ui-morder-left i {display:inline-block;width:18px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -4px;margin-right:8px;background-position: 0px -120px;}
+.ui-morder-right {font-size:14px;color:#979797;}
+.ui-morder-right i {display:inline-block;width:7px;height:14px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -2px;margin-left:5px;background-position: -120px -120px;}
+.ui-taketype {height:80px;}
+i.ui-confirm-ico {position:relative;display:inline-block;width:25px;height:25px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px -90px;}
+i.ui-send-ico {position:relative;display:inline-block;width:26px;height:24px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -120px -240px;}
+i.ui-take-ico {position:relative;display:inline-block;width:27px;height:24px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position: -60px -150px;}
+.mbtn-desc {font-size:13px;color:#1A1A1A;}
+.ui-taketype i em {position:absolute;width:16px;height:16px;line-height:18px;text-align:center;border-radius:8px;background-color:#fb5b04;color:#FFF;font-size:13px;left: 15px;top: -7px;}
+i.ui-pack-ico {display:inline-block;width:19px;height:20px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -4px;margin-right:8px;background-position: -60px -120px;}
+i.ui-lottery-ico {display:inline-block;width:18px;height:19px;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;vertical-align: -3px;margin-right:8px;background-position: -60px -240px;}
+.ui-mp-list li {margin-left:15px;padding-left:0px;}
+
+/*微信红包*/
+h3.ui-pack-title {height:44px;line-height:44px;text-align:center;font-size:18px;color:#ffe2b1;background-color:#d84e43;}
+i.ui-pback-ico {display:inline-block;width:40px;height:44px;position:absolute;left:0;background:url(/ss/weixin/yuyue/images/shop-sprite.png) no-repeat;background-size:180px 450px;background-position:-48px -347px;}
+.ui-pack {background-color:#fffaf5;}
+.ui-totshop-ico {display:inline-block;width:93px;height:93px;background:#FFF;border-radius:100%;margin-top:25px;text-align:center;line-height:93px;}
+.ui-totshop-ico i {display:inline-block;width:60px;height:42px;background:url(/ss/weixin/yuyue/images/ui-shop-ico2.png) no-repeat;background-size:60px 42px;margin-top: 27px;}
+.ui-total-pack {padding:0 15px;text-align:center;padding-bottom:23px;background-color:#faf6f1;}
+.ui-tpack-text1 {font-size:18px;color:#1A1A1A;margin-top:18px;}
+.ui-tpack-text2 {font-size:67px;color:#1A1A1A;}
+.ui-tpack-text3 {font-size:14px;color:#b2b2b2;}
+.ui-tpack-text4 {font-size:14px;color:#b2b2b2;}
+.ui-list-pack {display:-webkit-box;}
+.ui-list-pack p{-webkit-box-flex:1;font-size:17px;color:#1A1A1A;}
+.ui-list-pack span{font-size:17px;color:#1A1A1A;}
+.ui-list:not(.ui-list-text) li>p.ui-lpack-date {font-size:14px;color:#b2b2b2;}
+
+/*微信抽奖*/
+.ui-lottery {background-color:#FFF;}
+.ui-total-lottery {margin-top:34px;margin-bottom:50px;}
+.ui-lottery-num {font-size:67px;}
+.ui-lottery-text {font-size:18px;color:#CCC;margin-top:-10px;}
+.ui-lottery-count {text-align:center;}

@@ -49,7 +49,7 @@
 				 }
 				 else{
 				 	$('#sendcode').prop('disabled','disabled');				 
-					 $.get('/ci/weixin/reg/sendValidateCode.action',{'mobile':mobilenum},function(data){
+					 $.get('weixin/reg/sendValidateCode.action',{'mobile':mobilenum},function(data){
 					 	if(data.code=='0'){
 					 		alert(data.message);
 					 		$('#sendcode').removeProp('disabled');
@@ -85,7 +85,7 @@
 				$(this).prop('disabled','disabled').val('正在加载请稍候...');
 				 var $mobilenum=$('#mobile-num').val();
 				 var $sendcode=$('#identifying-code').val();
-				 $.get('/ci/weixin/reg/checkValidateCode.action',{'mobile':$mobilenum,'code':$sendcode},function(data){
+				 $.get('/weixin/reg/checkValidateCode.action',{'mobile':$mobilenum,'code':$sendcode},function(data){
 				 	$('#ok').removeProp('disabled').val('确定');
 				 	if(data.code=='0')alert(data.message);
 				 	else {

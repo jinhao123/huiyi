@@ -115,28 +115,6 @@ public class WeixinController
 			// WeixinGzh gzh = weixinGzhService.getGzhByOpenId(gzhId);
 			WeixinGzh gzh = weixinGzhService.defaultGzh;
 			return weixinService.getProcessMv(gzh, code, state, req);
-			// 根据state跳转到业务菜单
-			/*
-			 * if (MenuUtil.MENU_GONG_HUO_SHANG.equals(state)) { // 供货商页面
-			 * ModelAndView mv = ghsController.getMySupply(gzhId, userOpenId);
-			 * return mv; } if (MenuUtil.MENU_YI_JIAN_DING_HUO.equals(state)) {
-			 * // 一键订货 Map<String, Object> model = new HashMap<String,
-			 * Object>(); ModelAndView mv = new
-			 * ModelAndView("ci/weixin/common/onbuilding", model); return mv; }
-			 * else if (MenuUtil.MENU_HELP.equals(state)) { // 帮助 Map<String,
-			 * Object> model = new HashMap<String, Object>(); ModelAndView mv =
-			 * new ModelAndView("ci/weixin/common/help", model); return mv; }
-			 * else if (MenuUtil.MENU_DUI_ZHANG_DAN.equals(state)) { // 对账单页面
-			 * Map<String, Object> model = new HashMap<String, Object>();
-			 * ModelAndView mv = new
-			 * ModelAndView("app/esss/weixin/statementaccount", model); return
-			 * mv; } else if (MenuUtil.MENU_SETTING.equals(state)) { // 设置
-			 * Map<String, Object> model = new HashMap<String, Object>();
-			 * ModelAndView mv = new
-			 * ModelAndView("ci/weixin/ap/validationmobile", model); return mv;
-			 * } else { // 发送消息“暂未开通的功能” }
-			 */
-
 		}
 		catch (Exception e)
 		{
